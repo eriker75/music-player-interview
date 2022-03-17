@@ -487,6 +487,11 @@ a {
     margin-top: 15%;
   }
 }
+@media (max-width: 400px) {
+  .left-col {
+    margin-top: 30%;
+  }
+}
 
 .right-col {
   float: right;
