@@ -396,12 +396,12 @@ a {
     font-weight: bold;
   }
 }
-@media (min-width: 769px) and (max-width: 768px) {
+@media (max-width: 768px) {
   .navbar ul {
     display: none;
   }
 }
-@media (max-width: 769px) {
+@media (max-width: 768px) {
   .navbar {
     flex-direction: column;
     justify-content: center;
