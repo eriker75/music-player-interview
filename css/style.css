@@ -431,7 +431,7 @@ a {
   background-color: #cbebe6 !important;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .menu-h-mobile {
     display: none;
   }
