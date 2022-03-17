@@ -373,7 +373,7 @@ a {
   align-items: center;
   justify-content: space-between;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .navbar ul {
     display: flex;
   }
@@ -396,12 +396,12 @@ a {
     font-weight: bold;
   }
 }
-@media (min-width: 768px) and (max-width: 768px) {
+@media (min-width: 769px) and (max-width: 768px) {
   .navbar ul {
     display: none;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .navbar {
     flex-direction: column;
     justify-content: center;
