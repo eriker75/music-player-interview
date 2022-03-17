@@ -373,41 +373,85 @@ a {
   align-items: center;
   justify-content: space-between;
 }
-.navbar ul {
-  display: flex;
-}
-.navbar ul li {
-  display: inline-block;
-  margin: 0 15px;
-}
-.navbar ul li:first-of-type {
-  margin: 0;
-}
-.navbar ul li:last-of-type {
-  margin-right: 0;
-}
-.navbar ul li a {
-  color: #5f5f5f;
-  font-size: 15px;
-}
-@media (max-width: 768px) {
+@media (min-width: 768px) {
+  .navbar ul {
+    display: flex;
+  }
   .navbar ul li {
+    display: inline-block;
+    margin: 0 15px;
+  }
+  .navbar ul li:first-of-type {
     margin: 0;
-    text-align: right;
+  }
+  .navbar ul li:last-of-type {
+    margin-right: 0;
+  }
+  .navbar ul li a {
+    color: #5f5f5f;
+    font-size: 15px;
+  }
+  .navbar ul li a:hover {
+    color: white;
+    font-weight: bold;
+  }
+}
+@media (min-width: 768px) and (max-width: 768px) {
+  .navbar ul {
+    display: none;
   }
 }
 @media (max-width: 768px) {
-  .navbar ul {
+  .navbar {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }
 
+.menu-h-mobile {
+  width: 100%;
+}
+.menu-h-mobile .slicknav_menu {
+  background: linear-gradient(90deg, #cbebe6 50%, #f7bdba 50%);
+  z-index: 1000000000000000100000;
+  position: relative;
+}
+.menu-h-mobile .slicknav_menu a {
+  font-weight: bold;
+}
+.menu-h-mobile .slicknav_menu a:hover {
+  background: linear-gradient(90deg, #f7bdba 50%, #cbebe6 50%);
+}
+.menu-h-mobile .slicknav_btn.slicknav_collapsed {
+  background-color: #cbebe6;
+}
+.menu-h-mobile .slicknav_btn.slicknav_collapsed:hover {
+  background-color: #cbebe6 !important;
+}
+
+@media (min-width: 768px) {
+  .menu-h-mobile {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  #menu-h {
+    display: none;
+  }
+}
 .logo {
   cursor: pointer;
 }
 @media (max-width: 576px) {
   .logo {
     width: 140px;
+  }
+}
+@media (min-width: 576px) {
+  .logo {
+    align-self: flex-end;
   }
 }
 
@@ -436,6 +480,11 @@ a {
 @media (min-width: 1200px) {
   .left-col h1 {
     font-size: 5.625rem;
+  }
+}
+@media (max-width: 768px) {
+  .left-col {
+    margin-top: 15%;
   }
 }
 

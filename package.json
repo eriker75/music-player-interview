@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "song.js",
+  "source": "index.html",
   "scripts": {
     "watch": "sass --watch scss/style.scss css/style.css"
   },
@@ -10,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "jquery": "^3.6.0",
     "normalize.css": "^8.0.1",
     "rfs": "^9.0.6"
   },
